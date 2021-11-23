@@ -36,18 +36,18 @@
     <div class="container d-flex justify-content-between align-items-center">
       
       <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>  <img src="assets/img/industrial-robot.png" > Proyecto A3</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>  <img src="assets/img/industrial-robot.png" >Agualim APM 2021-2</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active " href="index.html">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="diseño.html">Diseño</a></li>
           <li>Planeación</a>
             <ul>
-              <li><a href="roadmap.html">Roadmap</a></li>
+              <li><a class="active " href="roadmap.html">Roadmap</a></li>
               <li><a href="">Submenu2</a></li>
             </ul>
 	        </li>
@@ -61,51 +61,20 @@
     </div>
   </header><!-- End Header -->
   
-  
+  <h1>Roadmap para la implementación de la celda de manufactura robotizada en el paletizado de productos en una línea de empaque de aguacates hass y limones.</h1>
 
   <main id="main">
     <section class="container">
-      <h1>Descripción del Proyecto</h1>
-      <p> Acá se pone la descripción del proyecto.
     </section>
     <section class="why-us" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 video-box">
-            <img center src="assets/img/van.jpg" class="img-fluid" alt="">
-            <img center src="assets/img/van2.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
-
-            <div class="icon-box">
-
-              <h4 class="title">Especificaciones</h4>
-              <dl>
-                <dt>Modelo del vehiculo</dt>
-                <dd>- Mercedes-Benz Sprinter 316 CDi</dd>
-                <dt>Operaciones</dt>
-                <dd>- Tomar los vidrios del conveyor</dd>
-                <dd>- Aplicación de primer (potenciador de adhesión)</dd>
-                <dd>- Ubicar los vidrios en la secuencia</dd>
-                <dd>- Tomar los vidrios</dd>
-                <dd>- Ubicar los vidrios en la mesa de alineación</dd>
-                <dd>- Tomar los vidrios</dd>
-                <dd>- Aplicar el adhesivo</dd>
-                <dd>- Ensamble a la van</dd>
-                <dt>Tipo de vidrios</dt>
-                <dd>- Vidrios posteriores térmicos templados</dd>
-                <dt>Cantidad de vidrios</dt>
-                <dd>- 2</dd>
-                
-              </dl>
-              
-            </div>
-
-          </div>
-          
-        </div>
+	      <h1>Detalles del proceso actual</h1>
+	      <p>Tanto los limones como los aguacates son empacados en canastas iguales. Las canastas tienen dimensiones 60x40x13 cm. Estás canastas están disponibles en el siguiente enlace: <a href="https://bit.ly/3Hge960">https://bit.ly/3Hge960</a> . 
+El proceso de paletizado se piensa realizar con palets europeos, de medidas 80x120x14.4 cm. Se ubicarían las canastas horizontalmente en una matriz 2x2, y se apilarían hasta 15 niveles por cada palet. <p>
+	      <p>Se empacan tanto limones como aguacates hass, pero no de manera simultánea. Es decir, llegan lotes de canastas con limones en un período de tiempo, y en otro período, llegan lotes de canastas con aguacates. Las canastas de limones pueden llegar a pesar hasta 10 kg, y las canastas con aguacates, hasta 14 kg. <p>
+	      <p>Actualmente, los operarios se encargan de cargar las canastas listas y ubicarlas en los palets. Según documentos de referencia, el tiempo de ciclo para tener listo cada palet sería de 5 minutos, pero no hay explicitud acerca del número de canastas por palet, así que se decidió determinar ese tiempo mediante una simulación, haciendo el movimiento de levantar canastas y ubicarlas en el palet, tomando el tiempo que tal movimiento tarda. Con un operario, el tiempo para llenar un nivel de palet fue de un minuto, de manera que si un operario se encarga de llenar los 15 niveles del palet sin descanso, el tiempo total para completar la tarea sería de 15 minutos. Una vez listo el palet, se estima que el tiempo necesario para que 1) un montacargas tome el palet lleno, 2) el montacargas saque el palet del área de paletizado y 3) un nuevo palet sea colocado en el lugar es de alrededor de 30 segundos, por lo que el tiempo de ciclo de la operación consistiría en sumar estos 30 segundos al tiempo previo de completado de palet. De esa forma, el tiempo de ciclo correspondiente al proceso sin automatizar sería en total <b>15 minutos y 30 segundos.</b> <p>
+	      <p>Las canastas listas estarían llegando al área de paletizado en una banda transportadora; los palets estarían siendo suministrados por un alimentador de palets, y los palets listos serían recogidos y transportados por un montacargas.<p>
+	      
       </div>
   
   </main><!-- End #main -->
