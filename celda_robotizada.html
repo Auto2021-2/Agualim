@@ -82,7 +82,9 @@
 
     <section class="why-us" data-aos="fade-up" date-aos-delay="200">
       <div class= "container">
+        <br>
         <center><h1>Celda de Manufactura Robotizada</h1></center>
+        <br>
       </div>
       <p></p>
       <div class= "container">
@@ -92,9 +94,49 @@
         </center>
         <br>
       </div>
+        <br>
+      <div class="container">
+        <br>
+
+        <center><h1>Definición del proceso actual</h1></center>
+        <br>
+        <p>Tanto los limones como los aguacates son empacados en canastas iguales. Las canastas tienen dimensiones 60x40x13 cm. Estás canastas están disponibles en el siguiente enlace: https://bit.ly/3Hge960. 
+El proceso de paletizado se piensa realizar con palets europeos, de medidas 80x120x14.4 cm. Se ubicarían las canastas horizontalmente en una matriz 2x2, y se apilarían hasta 15 niveles por cada palet. </p>
+
+<p>Se empacan tanto limones como aguacates hass, pero no de manera simultánea. Es decir, llegan lotes de canastas con limones en un período de tiempo, y en otro período, llegan lotes de canastas con aguacates. Las canastas de limones pueden llegar a pesar hasta 10 kg, y las canastas con aguacates, hasta 14 kg.</p>
+
+<p>Actualmente, los operarios se encargan de cargar las canastas listas y ubicarlas en los palets. Según documentos de referencia, el tiempo de ciclo para tener listo cada palet sería de 5 minutos, pero no hay explicitud acerca del número de canastas por palet, así que se decidió determinar ese tiempo mediante una simulación, haciendo el movimiento de levantar canastas y ubicarlas en el palet, tomando el tiempo que tal movimiento tarda. Con un operario, el tiempo para llenar un nivel de palet fue de un minuto, de manera que si un operario se encarga de llenar los 15 niveles del palet sin descanso, el tiempo total para completar la tarea sería de 15 minutos. Una vez listo el palet, se estima que el tiempo necesario para que 1) un montacargas tome el palet lleno, 2) el montacargas saque el palet del área de paletizado y 3) un nuevo palet sea colocado en el lugar es de alrededor de 30 segundos, por lo que el tiempo de ciclo de la operación consistiría en sumar estos 30 segundos al tiempo previo de completado de palet. De esa forma, el tiempo de ciclo correspondiente al proceso sin automatizar sería en total 15 minutos y 30 segundos.</p>
+
+<p>Las canastas listas estarían llegando al área de paletizado en una banda transportadora; los palets estarían siendo suministrados por un
+alimentador de palets, y los palets listos serían recogidos y transportados por un montacargas.</p> 
+      <br>
+      </div>
+<p></p>
+    <div class="container">
+      <br>
+      <center><h1>Propuesta general</h1></center>
+      <br>
+      <p>La idea general de la celda robotizada propuesta consiste en una celda común, con dos puntos de entrada (uno para canastas de limón y otro para canastas de aguacate), un punto de salida, un robot en el centro y un alimentador de palets. El alimentador de palets se encarga de colocarlos en una posición fija y el robot del centro toma las canastas y las coloca en el palet. Los palets completados son transportados fuera de la celda por una banda transportadora, donde un montacargas o varios se encargan de tomar los palets y transportarlos a almacén.</p>
+      <br>
+    </div>
+<br>
+    <div class="container">
+      <br>
+      <center><h1>Layout</h1></center>
+      <br>
+      <center>
+                 <img src="assets/img/layout.jpg" alt="Layout" style="width:1120px;height:630px;">           
+        </center>
+        <br>
+        <br>
+    </div>
+    <br>
+
 
       <p></p>
     <div class="container">
+      <br>
+      <center><h1>Selección del robot y el gripper</h1></center>
 
         <div class="row">
           <div class="col-lg-4 video-box">
@@ -106,7 +148,16 @@
             <div class="icon-box">
 
               <h4 class="title">Gripper</h4>
-              <p>La estructura del gripper imita al gripper del video de Mercedez Benz “Grenzebach | Automatic Front, Side and Rear Glass Decking at Sprinter Assembly Line”, mientras que sus materiales de construcción fueron elegidos en pro de una estructura ligera. Así, los perfiles usados son de aluminio de 50x50 mm y con calibre de 3 mm.</p>
+              <p>ABB ofrece dentro de su catalogo de productos el flex gripper clamp, el cual esta diseñado para sujetar cajas y canastas en aplicaciones de paletizado.</p>
+                <ul class="c4">
+                <li>Capacidad de carga: 40 kg</li>
+                <li>Peso del gripper: 45 kg</li> 
+                <li>Rango de altura de la caja: 150 - 330 mm</li>
+                <li>Rango de largo de la caja: 200 - 650 mm</li> 
+                <li>Rango de ancho de la caja: 200 - 500 mm </li>
+                <li>Rotación del cable +- 180 °</li> 
+                <li>Presión del aire: 6-8 bar</li> 
+              </ul>
             </div>
 
           </div>
@@ -122,7 +173,13 @@
             <div class="icon-box">
 
               <h4 class="title">Robot IRB 460</h4>
-              <p>La estructura del gripper imita al gripper del video de Mercedez Benz “Grenzebach | Automatic Front, Side and Rear Glass Decking at Sprinter Assembly Line”, mientras que sus materiales de construcción fueron elegidos en pro de una estructura ligera. Así, los perfiles usados son de aluminio de 50x50 mm y con calibre de 3 mm.</p>
+              <p>Este robot esta diseñado para aplicaciones de paletizado y posee las siguientes caracteristicas:</p>
+
+                <ul class="c4">
+                <li>Capacidad de carga = 110 kg </li>
+                <li>Alcance horizontal = 2.4 m</li>
+              </ul>
+
             </div>
 
           </div>
@@ -130,7 +187,33 @@
         </div>
       </div>
       <br>
-      <p></p>
+
+      <div class="container">
+        <br>
+        <center><h1>Diagrama de flujo</h1></center>
+        <br>
+        <center>
+                 <img src="assets/img/DiagramaFlujo.png" alt="Roadmap" style="width:314px;height:971px;">           
+        </center>
+        <br>
+      </div>
+
+      <div clas="container">
+      <br>
+      <center><h1>Análisis de riesgos</h1></center>
+      <br>
+      <div class="row">
+            <div class="card">
+              <div class="card-body" style="text-align:center;">
+                <h5 class="card-title">Análisis de riesgos</a></h5>
+                <iframe src="https://docs.google.com/spreadsheets/d/1MrfCDCDu58BYMeyQC19lgFwwl_m5dFmG/edit#gid=1188391285=true&amp;headers=false"width="1000" height="680"></iframe>
+              </div>
+            </div>
+        </div>
+
+
+
+      <br>
       <div class="container">
         <br>
         <center>
@@ -142,18 +225,6 @@
       </div> 
       <p></p>
 
-
-      <div class="container">
-	      <h1>Detalles del proceso actual</h1>
-	      <p>Tanto los limones como los aguacates son empacados en canastas iguales. Las canastas tienen dimensiones 60x40x13 cm. Estás canastas están disponibles en el siguiente enlace: <a href="https://bit.ly/3Hge960">https://bit.ly/3Hge960</a> . 
-El proceso de paletizado se piensa realizar con palets europeos, de medidas 80x120x14.4 cm. Se ubicarían las canastas horizontalmente en una matriz 2x2, y se apilarían hasta 15 niveles por cada palet. <p>
-	      <p>Se empacan tanto limones como aguacates hass, pero no de manera simultánea. Es decir, llegan lotes de canastas con limones en un período de tiempo, y en otro período, llegan lotes de canastas con aguacates. Las canastas de limones pueden llegar a pesar hasta 10 kg, y las canastas con aguacates, hasta 14 kg. <p>
-	      <p>Actualmente, los operarios se encargan de cargar las canastas listas y ubicarlas en los palets. Según documentos de referencia, el tiempo de ciclo para tener listo cada palet sería de 5 minutos, pero no hay explicitud acerca del número de canastas por palet, así que se decidió determinar ese tiempo mediante una simulación, haciendo el movimiento de levantar canastas y ubicarlas en el palet, tomando el tiempo que tal movimiento tarda. Con un operario, el tiempo para llenar un nivel de palet fue de un minuto, de manera que si un operario se encarga de llenar los 15 niveles del palet sin descanso, el tiempo total para completar la tarea sería de 15 minutos. Una vez listo el palet, se estima que el tiempo necesario para que 1) un montacargas tome el palet lleno, 2) el montacargas saque el palet del área de paletizado y 3) un nuevo palet sea colocado en el lugar es de alrededor de 30 segundos, por lo que el tiempo de ciclo de la operación consistiría en sumar estos 30 segundos al tiempo previo de completado de palet. De esa forma, el tiempo de ciclo correspondiente al proceso sin automatizar sería en total <b>15 minutos y 30 segundos.</b> <p>
-	      <p>Las canastas listas estarían llegando al área de paletizado en una banda transportadora; los palets estarían siendo suministrados por un alimentador de palets, y los palets listos serían recogidos y transportados por un montacargas.<p>
-	      
-
-
-      </div>
   
   </main><!-- End #main -->
   
