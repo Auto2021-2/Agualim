@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Gestión de la producción</title>
+  <title>Evaluación económica</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -51,10 +51,10 @@
                 Desarrollo del proyecto
               </a>
         <ul role="menu" aria-labelledby="dropdownMenu">
-          <li><a class="active" href="gestion_produccion.html">Gestión de producción</a></li>
+          <li><a href="gestion_produccion.html">Gestión de producción</a></li>
           <li><a href="industria_40.html">Industria 4.0</a></li>
           <li><a href="planeacion.html">Planeación de proyecto</a></li>
-          <li><a href="economica.html">Evaluación económica de proyectos</a></li>
+          <li><a class="active" href="economica.html">Evaluación económica de proyectos</a></li>
           <li><a href="celda_robotizada.html">Celda Robotizada</a></li>
           <li><a href="digital_factory.html">Digital Factory</a></li>
           <li><a href="plc.html">Controladores industriales(PLC)</a></li>
@@ -76,15 +76,16 @@
   <main id="main">
     <br> <br> <br> <br>
     <section class="container" data-aos="fade-up" date-aos-delay="200">
-      <h1 class="section-title">Gestión de la producción</h1>  
+      <h1 class="section-title">Evaluación económica</h1>  
     </section>
     <section class="why-us" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
 	      <p class="card-text">
-          En materia de Gestión de la Producción se pretendió evaluar el desempeño del proceso actual y ver cuánto mejora al implementarse la propuesta de automatización. Para ello fue clave la realización de los diagramas <b>Value Stream Mapping</b> tanto para el proceso actual como para el proceso automatizado, con el objetivo de poner sobre el papel todos los aspectos del proceso en materia de flujo de material, estaciones de trabajo, tiempos de ciclo, OEE y demás temas.
-          <br> <br>
-          Para la realización de los VSM fue necesario estimar el tiempo de Takt del proceso de producción, el cuál tuvo como resultado un tiempo de <b>19 segundos.</b> Con base en él y en la demanda estimada, se dibujó el VSM del proceso actual, se identificaron los puntos de mejora y se dibujó posteriormente el VSM para el proceso automatizado.
-        </p>
+		      Con la intención de corroborar la viabilidad de nuestro proyecto desde un punto de vista económico y en base a lo establecido en el alcance del proyecto, se realizó un estudio entorno a 3 indicadores financieros, los cuales son muy comunes en la toma de decisiones; con esto se hace referencia al VPN, TIR y Payback.
+Para dar inicio al presente estudio económico, se realizo un estudio de costos, donde se tuvieron en cuenta distintos elementos que conforman la celda. Con el préstamo solicitado y en base a los ingresos que se esperan conseguir, estamos proyectando nuestra empresa a 5 años, tiempo en el cual se espera que este alcance un punto de equilibrio, financieramente hablando. Este es un proyecto a largo plazo, por esto se diseñó este modelo con la intención que el VPN estuviera lo más próximo a 0 y con ello, encontrar el TIR con el cual se puede lograr este cometido.
+Una vez calculado el valor total que conlleva la implementación de la celda, se asumió un préstamo por dicha cantidad y asumiendo unos ingresos como se estipula en la tabla de Excel. Se calculó el Vp(i) respectivo a cada año y posteriormente se sumó, esto con la intención de encontrar el VPN total, ahora bien, una vez calculado dicho valor, se implementó la función TIR para obtener un porcentaje (%) óptimo para dicha tasa.
+Respecto al Payback, se calculó sumando a la inversión inicial, el flujo obtenido en el año 1 y posteriormente a este resultado, se sumó nuevamente solo que ahora, se uso fue el flujo del segundo año, este proceso se realizo una y otra vez hasta llegar a un resultado positivo.
+	      </p>
 	      
       </div>
     </section>
@@ -93,60 +94,17 @@
       <h2 class="section-title">VSM proceso actual</h2>
       <div class="container">
         <div class="scrollable">
-          <img src="assets/img/VSM_actual.png">
-        </div>
-      </div>
-      <br>
-      <h2 class="section-title">VSM proceso automatizado</h2>
-      <div class="container">
-        <div class="scrollable">
-          <img src="assets/img/VSM_automatizado.png">
+          <img src="assets/img/reporte_economico.png">
+		<p>
+			Como se observa en la tabla anterior, se pueden apreciar 3 valores destacados, los cuales son: TIR, VPN y playback, estos tienen un valor de 12%, COP 880.329 y 4 años respectivamente. En este caso, el TIR del 12% representa la mínima taza aceptable en la cual el proyecto es rentable, dado que se asegura un VPN positivo y cercano a 0, ahora bien, respecto a los 4 años, es el tiempo estipulado en el cual se planea cubrir la totalidad de la deuda con el banco.
+		</P>
         </div>
       </div>
     </section>
 
     <br> <br>
 
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-        <h2 class="section-title">Simulación en Plant simulation</h2>
-        <p class="card-text">
-          Ambos procesos, tanto el actual como el de la propuesta de automatización, fueron simulados en el software <b>Tecnomatix Plant Simulation,</b> en una configuración con estaciones de trabajo y buffers.
-        </p>
-      </div>
-    </section>
-
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-        <p class="card-text"><b>Imagen de la planta del proceso actual</b></p>
-        <img class="centering" src="assets/img/conf_actual_simulation.png" width=80%>
-        <br>
-        <p class="card-text"><b>Imagen de la planta del proceso automatizado</b></p>
-        <img class="centering" src="assets/img/conf_auto_simulation.png" width=80%>      
-      </div>
-    </section>
-
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-        <p class="card-text">Los resultados de la simulación comprenden primero, los tiempos de salida por unidad y segundo, las gráficas estadísticas de las estaciones en conjunto.</p>
-      </div>
-    </section>
-
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-        <table>
-          <tr>
-            <th><b>Proceso actual</b></td>
-            <th><b>Proceso automatizado</b></td>
-          </tr>
-          <tr>
-            <td>22.2902 s</td>
-            <td>18.9239 s</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-  
+	  
   </main><!-- End #main -->
   
   
