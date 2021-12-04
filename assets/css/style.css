@@ -754,6 +754,7 @@ section {
 .centering{
   display: block;
   margin: auto;
+  justify-content: space-around;
 }
 
 table,th,td,tr{
