@@ -125,7 +125,11 @@ ul.c3{
 
 #main {
   margin-top: 0px;
-  background: linear-gradient(to right, rgba(248, 244, 244, 0.712),  rgba(248, 244, 244, 0.712)), url("../img/white.jpg");
+  /*background: linear-gradient(to right, rgba(248, 244, 244, 0.712),  rgba(248, 244, 244, 0.712)), url("https://st4.depositphotos.com/1692783/i/600/depositphotos_212228600-stock-photo-soft-green-pastel-background-vintage.jpg");*/
+  background-image: url(https://thumbs.dreamstime.com/b/fondo-blanco-y-gris-claro-de-la-textura-m%C3%A1rmol-abstracta-del-cemento-modelos-naturales-piedra-para-el-trabajo-arte-dise%C3%B1o-142012852.jpg);
+  background-size:  cover;
+  background-attachment: fixed;
+  background-image
 }
 
 /*--------------------------------------------------------------
@@ -739,12 +743,30 @@ section {
 --------------------------------------------------------------*/
 .why-us .container{
   box-shadow: 0 5px 25px 0 rgba(216, 214, 214, 0.6);
-  background: #fff;
+  /*background: #fff;*/
 }
 
 .scrollable{
   overflow-x: auto;
   white-space: nowrap;
+}
+
+.centering{
+  display: block;
+  margin: auto;
+}
+
+table,th,td,tr{
+  border: solid;
+}
+
+th,td{
+  width: 50%;
+}
+
+table{
+  width: 100%;
+  text-align: center;
 }
 
 .why-us .icon-box + .icon-box {
