@@ -563,6 +563,7 @@ section {
   position: relative;
 }
 
+
 .section-title h2::before {
   content: '';
   position: absolute;
@@ -736,9 +737,14 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us .container {
+.why-us .container{
   box-shadow: 0 5px 25px 0 rgba(216, 214, 214, 0.6);
   background: #fff;
+}
+
+.scrollable{
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .why-us .icon-box + .icon-box {
