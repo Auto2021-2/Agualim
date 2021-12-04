@@ -1,4 +1,4 @@
-# AQUALIM
+# AGUALIM
 
 Proyecto de automatización del sistema de paletizado para el empaquetado de aguacates y limones
 
