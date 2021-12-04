@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Roadmap</title>
+  <title>Gestión de la producción</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -44,14 +44,14 @@
   <ul>
     
     
-    <li><a class="active " href="index.html">Inicio</a></li>
+    <li><a href="index.html">Inicio</a></li>
 
 
     <div class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Desarrollo del proyecto
               </a>
         <ul role="menu" aria-labelledby="dropdownMenu">
-          <li><a href="gestion_produccion.html">Gestión de producción</a></li>
+          <li><a class="active" href="gestion_produccion.html">Gestión de producción</a></li>
           <li><a href="industria_40.html">Industria 4.0</a></li>
           <li><a href="economica.html">Evaluación económica de proyectos</a></li>
           <li><a href="celda_robotizada.html">Celda Robotizada</a></li>
@@ -71,150 +71,80 @@
     </div>
   </header><!-- End Header -->
   
- 
-
+  
   <main id="main">
     <br> <br> <br> <br>
     <section class="container" data-aos="fade-up" date-aos-delay="200">
-      <h1 class="section-title">Industria 4.0</h1>  
-      <h2> Flujo del proceso:</h2>
+      <h1 class="section-title">Gestión de la producción</h1>  
     </section>
     <section class="why-us" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <p class="card-text">
-          
-Materia prima entra a una <b>banda transportadora</b>, en ella los operarios se encargan de preseleccionar el material. Después llega a la <b>máquina lavadora y secadora</b> donde sale a una <b>segunda banda transportadora</b> que lo lleva a un <b>singulador</b>. En el singulador se realiza el proceso de descarte con <b>4 mecanismos tipo péndulo</b> que descartan los frutos defectuosos según sea indicado por un <b>sistema de visión de máquina (cámaras)</b>. Posteriormente hay una bifurcación, en la que si se están procesando aguacates, estos salen a una <b>tercera banda transportadora</b> que los lleva a la zona de empacado; mientras que si se están procesando limones, estos llegan a la <b>máquina enceradora</b>, que también los saca a la zona de empacado. En la zona de empacado, una vez listas las canastas, estas se ponen en una <b>cuarta banda transportadora</b> que las lleva a la celda robotizada para el paletizado. En la celda tenemos el <b>robot</b>, la banda transportadora de entrada que es la misma de la zona de empacado, el <b>alimentador de palets</b> y la <b>banda transportadora de salida</b>.
+	      <p class="card-text">
+          En materia de Gestión de la Producción se pretendió evaluar el desempeño del proceso actual y ver cuánto mejora al implementarse la propuesta de automatización. Para ello fue clave la realización de los diagramas <b>Value Stream Mapping</b> tanto para el proceso actual como para el proceso automatizado, con el objetivo de poner sobre el papel todos los aspectos del proceso en materia de flujo de material, estaciones de trabajo, tiempos de ciclo, OEE y demás temas.
+          <br> <br>
+          Para la realización de los VSM fue necesario estimar el tiempo de Takt del proceso de producción, el cuál tuvo como resultado un tiempo de <b>19 segundos.</b> Con base en él y en la demanda estimada, se dibujó el VSM del proceso actual, se identificaron los puntos de mejora y se dibujó posteriormente el VSM para el proceso automatizado.
         </p>
-        
+	      
       </div>
-      
     </section>
+
     <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-      <div class="row">
-      <div class="container">
-      <h2>Elementos de planta:</h2>
-      <ul>
-       <li>Banda transportadora (5)  </li> 
-       <li>Máquina lavadora secadora (1)  </li> 
-       <li>Singulador  </li> 
-       <li>Mecanismo péndulo (4)  </li> 
-       <li>4 motores  </li> 
-       <li>Sistema de visión de máquina  </li> 
-       <li>4 cámaras  </li> 
-       <li>Máquina enceradora (1)  </li> 
-       <li>Robot (1)  </li> 
-       <li>Alimentador de Palets (1)  </li> 
-
- </ul>
-
-      </div> 
-
-      </div>  
-      </div>
-    </section>
-
-
-</section>
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-      <div class="row">
-      <div class="container">
-      <h2>Sensores y actuadores:</h2>
-      <ul>
-        <li>Sensores: </li>
-        <ul>
-        <li>Sensor de entrada a máquina lavadora (1) </li>
-        <li>Sensor de salida de máquina lavadora (1) </li>
-        <li>Sensor de entrada a singulador (1) </li>
-        <li>Cámaras (4) </li>
-        <li>Sensor de posición en zona de descarte (1) </li>
-        <li>Sensor de salida de singulador (1) </li>
-        <li>Sensor de entrada a máquina enceradora (1) </li>
-        <li>Sensor de salida de zona de empacado (1) </li>
-        <li>Sensor de llegada a celda de paletizado (1) </li>
-        <li>Sensor de llegada a la salida de la celda (1) </li>
-        </ul>
-        <li>Actuadores: </li>
-        <ul>
-        <li>Motores banda transportadora (5) </li>
-        <li>Motor máquina lavadora secadora (1) </li>
-        <li>Motor máquina enceradora (1) </li>
-        <li>Motores mecanismos péndulo (4) </li>
-        <li>Sistema robótico (1) </li>
-        <li>Motor de alimentador de palets (1) </li>
-        </ul>
-       
- </ul>
-
-      </div> 
-
-      </div>  
-      </div>
-    </section>
-
-</section>
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-      <div class="row">
-      <div class="container">
-      <h2>Elementos de control:</h2>
-      <ul>
-       <li>Controlador robot </li> 
-       <li>PLCs  </li> 
-
- </ul>
-
-      </div> 
-
-      </div>  
-      </div>
-    </section>
-
-</section>
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-      <div class="row">
-      <div class="container">
-      <h2>Elementos de supervisión:</h2>
-      <ul>
-       <li>SCADA </li> 
-
- </ul>
-
-      </div> 
-
-      </div>  
-      </div>
-    </section>
-
-</section>
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-      <div class="row">
-      <div class="container">
-      <h2>Elementos de interfaz:</h2>
-      <ul>
-       <li>HMIs</li> 
-
- </ul>
-
-      </div> 
-
-      </div>  
-      </div>
-    </section>
-
- <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <h2 class="section-title">Arquitectura de control</h2>
+      <h2 class="section-title">VSM proceso actual</h2>
       <div class="container">
         <div class="scrollable">
-          <img src="assets/img/Arquitectura_control.png">
+          <img src="assets/img/VSM_actual.png">
+        </div>
+      </div>
+      <br>
+      <h2 class="section-title">VSM proceso automatizado</h2>
+      <div class="container">
+        <div class="scrollable">
+          <img src="assets/img/VSM_automatizado.png">
         </div>
       </div>
     </section>
 
-    
+    <br> <br>
+
+    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <h2 class="section-title">Simulación en Plant simulation</h2>
+        <p class="card-text">
+          Ambos procesos, tanto el actual como el de la propuesta de automatización, fueron simulados en el software <b>Tecnomatix Plant Simulation,</b> en una configuración con estaciones de trabajo y buffers.
+        </p>
+      </div>
+    </section>
+
+    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <p class="card-text"><b>Imagen de la planta del proceso actual</b></p>
+        <img class="centering" src="assets/img/conf_actual_simulation.png" width=80%>
+        <br>
+        <p class="card-text"><b>Imagen de la planta del proceso automatizado</b></p>
+        <img class="centering" src="assets/img/conf_auto_simulation.png" width=80%>      
+      </div>
+    </section>
+
+    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <p class="card-text">Los resultados de la simulación comprenden primero, los tiempos de salida por unidad y segundo, las gráficas estadísticas de las estaciones en conjunto.</p>
+      </div>
+    </section>
+
+    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <table>
+          <tr>
+            <th><b>Proceso actual</b></td>
+            <th><b>Proceso automatizado</b></td>
+          </tr>
+          <tr>
+            <td>22.2902 s</td>
+            <td>18.9239 s</td>
+          </tr>
+        </table>
+      </div>
+    </section>
   
   </main><!-- End #main -->
   
