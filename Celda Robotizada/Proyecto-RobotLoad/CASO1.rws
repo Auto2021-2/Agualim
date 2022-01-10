@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <workspace name="C:\Users\sebas\Downloads\Proyecto\CASO1.rws">
+    <project name="Proyecto" station="" robotserienumber="" robotmodel="" eoatooling="" processshop="" engineer="" telephone="" email="" remarks="">
+      <robot name="IRB4600-45/2.05" file="C:\Program Files (x86)\ABB Industrial IT\Robotics IT\RobotLoad\ROBOTS\IRB4600\IRB4600_45_205_Robot.rbt">
+      </robot>
+      <loadcase name="Gripper+aguacate" wristdown="">
+        <load name="Gripper" mass="28" cgx="0,297" cgy="0" cgz="86,1" jx="0,589498" jy="1,412" jz="1,775" TCPx="0" TCPy="0" TCPz="166" TCPq1="1" TCPq2="0" TCPq3="0" TCPq4="0" type="TOOL" />
+        <load name="Canasta" mass="14" cgx="0" cgy="0" cgz="99,711" jx="0,107489" jy="0,208068" jz="0" TCPx="0" TCPy="0" TCPz="0" TCPq1="1" TCPq2="0" TCPq3="0" TCPq4="0" type="PAYLOAD" />
+      </loadcase>
+    </project>
+  </workspace>
+</xml>

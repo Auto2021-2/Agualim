@@ -1,0 +1,2 @@
+Result	File Name	StationName	Load Case Name	Robot Name	Robot Serial Number	Rating THW	Rating CoGZ	Rating CoGL	Rating Jxy	Rating Jz	Rating T6	Rating T5	Rating T4	Rating T3	Rating T2	Pt Mass	Pt CoGZ	Pt CoGL	Pt Jx	Pt Jy	Pt Jz	F Mass	L Mass	U Mass	T Mass	Wrist Down	Messages
+Passed	CASO1.rws		Gripper+aguacate	IRB4600-45/2.05		0,933333333333333	0,673865385443442	0,00107199762227309	0,174560887571533	0,0887501234926	0,00107199762227309	0,673865385443442	0,651832187726148	0,898759284732261	0,913399701520051	42	146	0	1	1,92	1,78	0	0	0	0		
