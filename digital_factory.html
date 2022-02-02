@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Roadmap</title>
+  <title>Digital Factory</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -90,22 +90,6 @@
       <br>
       <center><h1>Selección de archivos CAD</h1></center>
 
-        <div class="row">
-          <div class="col-lg-4 video-box">
-            <img center src="assets/img/Alimentador de pallets.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
-
-            <div class="icon-box">
-
-              <h4 class="title">Alimentador de pallets</h4>
-              
-              <p>El alimentador de pallets se ubica sobre una banda transportadora que mueve el pallet que se ha sido liberado por esta máquina. El principio de funcionamiento consiste en levantar toda una torre de pallets excepto el de la base, dejando libre para que pase a la siguiente etapa.</p>
-
-            </div>
-
-          </div>
           
           <div class="row">
             <div class="col-lg-4 video-box">
@@ -119,6 +103,44 @@
               <h4 class="title">Conveyor Belt</h4>
 
               <p>El proceso que conlleva el limon y el aguacate requiere en varios puntos de bandas transportadoras que lleven el producto a traves de una etapa y/o hasta la etapa siguiente.</p>
+  
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 video-box">
+              <img center src="assets/img/Roller_chiquita.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
+
+              <div class="icon-box">
+
+              <h4 class="title">Roller conveyor para canastas</h4>
+
+              <p>
+                Se seleccionó una transportadora de rodillos para el movimiento de las canastas desde la zona de empacado hasta la celda de paletizado. Las canastas son transportadas en fila.
+              </p>
+  
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 video-box">
+              <img center src="assets/img/Roller_grande.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
+
+              <div class="icon-box">
+
+              <h4 class="title">Roller conveyor para palets</h4>
+
+              <p>
+                La salida de los palets llenos de canastas es llevada a cabo por otra transportadora de rodillos. Para este caso, debe ser más ancha. Se seleccionó la que se muestra en la imagen
+              </p>
   
               </div>
             </div>
@@ -143,15 +165,17 @@
 
           <div class="row">
             <div class="col-lg-4 video-box">
-              <img center src="assets/img/Fuelle Singulador1.jpg" class="img-fluid" alt="">
+              <img center src="assets/img/Workstation.png" class="img-fluid" alt="">
             </div>
 
             <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
 
               <div class="icon-box">
 
-              <h4 class="title">Singulador</h4>
-                <p>El singulador permite organizar el flujo de los aguacates y limones de tal modo que se puede realizar procesos como etiquetado, calibración y selección. </p>
+              <h4 class="title">Workstation</h4>
+                <p>
+                  Por simplicidad en la obtención de las geometrías CAD, se utilizó la estrategia de implementar una geometría estándar para las máquinas de lavado, encerado y singulado para la simulación. Esta geometría es la que se presenta, que corresponde a una estación de trabajo para mecanizado CNC, pero que da la apariencia de una estación en la que hay flujo de material y procesamiento del mismo
+                </p>
   
               </div>
             </div>
@@ -172,34 +196,57 @@
                 <li>Capacidad de carga = 110 kg </li>
                 <li>Alcance horizontal = 2.4 m</li>
               </ul>
+              <p>
+                Dado que la simulación del movimiento del robot ya se realizó con la celda de RobotStudio, el modelo del robot se coloca en la fabrica digital como un sumidero de canastas, fuente de palets completos y sensor para transmitir la señal al sistema.
+              </p>
   
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-4 video-box">
-              <img center src="assets/img/gripperCAD.png" class="img-fluid" alt="">
-            </div>
+     <p>
+       Se utilizaron más geometrías. Particularmente la del Palet Europeo se consiguió tal cual con sus dimensiones, y para las frutas (limones y aguacates) se utilizó el modelado de esferas de 35 mm de diámetro.
+     </p>     
+    </div>
 
-            <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <h1>Montaje de la fábrica</h1>
 
-              <div class="icon-box">
+        <img src="assets/img/PlantaMontada.png" width="80%">
 
-              <h4 class="title">Gripper</h4>
-              <p>ABB ofrece dentro de su catalogo de productos el flex gripper clamp, el cual esta diseñado para sujetar cajas y canastas en aplicaciones de paletizado.</p>
-                <ul class="c4">
-                <li>Capacidad de carga: 40 kg</li>
-                <li>Peso del gripper: 45 kg</li> 
-                <li>Rango de altura de la caja: 150 - 330 mm</li>
-                <li>Rango de largo de la caja: 200 - 650 mm</li> 
-                <li>Rango de ancho de la caja: 200 - 500 mm </li>
-                <li>Rotación del cable +- 180 °</li> 
-                <li>Presión del aire: 6-8 bar</li> 
-                </ul>
-              </div>
-            </div>
-          </div>
+        <p>
+          La planta se montó con los objetos CAD descritos arriba. Se utilizaron varias workstation para simular las máquinas de lavado, encerado y singulado; también se planteó una configuración de bifurcación con las bandas transportadoras, de manera que una vía sea la de los limones, y la otra sea la de los aguacates. En particular, la vía de los limones es aquella que lleva a la máquina enceradora. Para el montaje se utilizó el software Siemens NX en el modo de Mechatronics Concept Designer.
+        </p>
+        <br>
+        <p>
+          Los objetos fijos se modelaron como cuerpos de colisión, en los cuales influye la geometría que tengan pero no tiene efecto la gravedad. Por ejemplo, las bandas transportadoras, los workstations y el robot son sólo cuerpos de solución. Por su parte, las frutas, las canastas y los palets, además de ser cuerpos de colisión, son también cuerpos rígidos, de manera que la gravedad <b>sí</b> tiene efecto en ellos.
+        </p>
+      </div>
+
+      <br>
+      <div class="row">
+        <h1>Simulación</h1>
+
+        <p>
+          Se realizó la simulación del sistema utilizando los siguientes aspectos:
+          <ul>
+            <li>Velocidad en la superficie de las bandas transportadoras y los workstations</li>
+            <li>Fuente de frutas al inicio de la planta. Se generan frutas cada determinado tiempo</li>
+            <li>Sumidero de frutas en la mesa de empacado y fuente de canastas en la misma. Ello se hizo con el objetivo de simular la acción de empacado que realizan los operarios.</li>
+            <li>Sumidero de canastas en el robot. Esto emula la entrada de canastas a la celda robotizada de paletizado</li>
+            <li>Fuente de palets llenos en el robot. También emula la acción de la celda robotizada, en este caso para la salida de palets completados</li>
+          </ul>
+        </p>
+
+        <video controls>
+          <source src="assets/img/Video_1_simulacion_digital_factory.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
 
 
 
