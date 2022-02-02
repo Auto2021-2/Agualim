@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Roadmap</title>
+  <title>Actuadores en automatización</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/Logo.png" rel="icon">
-  <link href="assets/img/Logo.png" rel="icon">
+  <link href="assets/img/Logo" rel="icon">
    <!-- Google Fonts -->
    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,600,600i,700,700i|Krona+One:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
@@ -45,10 +44,10 @@
   <ul>
     
     
-    <li><a href="index.html">Inicio</a></li>
+    <li><a  href="index.html">Inicio</a></li>
 
 
-    <div class="dropdown"> <a class="active "class="dropdown-toggle" data-toggle="dropdown" href="#">
+    <div class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Desarrollo del proyecto
               </a>
         <ul role="menu" aria-labelledby="dropdownMenu">
@@ -56,7 +55,7 @@
           <li><a href="industria_40.html">Industria 4.0</a></li>
           <li><a href="planeacion.html">Planeación de proyecto</a></li>
           <li><a href="economica.html">Evaluación económica de proyectos</a></li>
-          <li><a href="celda_robotizada.html">Celda Robotizada</a></li>
+          <li><a class="active " href="celda_robotizada.html">Celda Robotizada</a></li>
           <li><a href="digital_factory.html">Digital Factory</a></li>
           <li><a href="plc.html">Controladores industriales(PLC)</a></li>
           <li><a href="actuadores.html">Actuadores de automatización</a></li>
@@ -72,26 +71,153 @@
 
     </div>
   </header><!-- End Header -->
+  <br>
   
-  <h1>Roadmap para la implementación de la celda de manufactura robotizada en el paletizado de productos en una línea de empaque de aguacates hass y limones.</h1>
-
+  <br> 
+  
+  
   <main id="main">
+
+  <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      
     <section class="container">
+      <br>
+      <center><h1>Actuadores en automatización</h1></center>
+      <br>
     </section>
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-	      <h1>Detalles del proceso actual</h1>
-	      <p>Tanto los limones como los aguacates son empacados en canastas iguales. Las canastas tienen dimensiones 60x40x13 cm. Estás canastas están disponibles en el siguiente enlace: <a href="https://bit.ly/3Hge960">https://bit.ly/3Hge960</a> . 
-El proceso de paletizado se piensa realizar con palets europeos, de medidas 80x120x14.4 cm. Se ubicarían las canastas horizontalmente en una matriz 2x2, y se apilarían hasta 15 niveles por cada palet. <p>
-	      <p>Se empacan tanto limones como aguacates hass, pero no de manera simultánea. Es decir, llegan lotes de canastas con limones en un período de tiempo, y en otro período, llegan lotes de canastas con aguacates. Las canastas de limones pueden llegar a pesar hasta 10 kg, y las canastas con aguacates, hasta 14 kg. <p>
-	      <p>Actualmente, los operarios se encargan de cargar las canastas listas y ubicarlas en los palets. Según documentos de referencia, el tiempo de ciclo para tener listo cada palet sería de 5 minutos, pero no hay explicitud acerca del número de canastas por palet, así que se decidió determinar ese tiempo mediante una simulación, haciendo el movimiento de levantar canastas y ubicarlas en el palet, tomando el tiempo que tal movimiento tarda. Con un operario, el tiempo para llenar un nivel de palet fue de un minuto, de manera que si un operario se encarga de llenar los 15 niveles del palet sin descanso, el tiempo total para completar la tarea sería de 15 minutos. Una vez listo el palet, se estima que el tiempo necesario para que 1) un montacargas tome el palet lleno, 2) el montacargas saque el palet del área de paletizado y 3) un nuevo palet sea colocado en el lugar es de alrededor de 30 segundos, por lo que el tiempo de ciclo de la operación consistiría en sumar estos 30 segundos al tiempo previo de completado de palet. De esa forma, el tiempo de ciclo correspondiente al proceso sin automatizar sería en total <b>15 minutos y 30 segundos.</b> <p>
-	      <p>Las canastas listas estarían llegando al área de paletizado en una banda transportadora; los palets estarían siendo suministrados por un alimentador de palets, y los palets listos serían recogidos y transportados por un montacargas.<p>
-	      
+
+    <div class="container">
+      <br>
+      <center><h1>Aplicación</h1></center>
+
+      
+        <div class="row">
+          <div class="col-lg-4 video-box">
+            <img center src="assets/img/Alimentador de pallets.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box">
+
+              
+              
+              <p>
+                Se vio conveniente, para el proyecto propuesto y realizado que la aplicación que puede implementar actuadores de automatización es la misma <b>alimentación de palets,</b> ya que es el único movimiento, sin mencionar al robot, que se realiza sin ser encima de una banda transportadora.
+              </p>
+
+            </div>
+
+          </div>
+          
+          <div class="row">
+            <p>
+              La propuesta general fue la siguiente: se requerirían <b>cuatro cilindros</b>, uno de ellos que accione horizontalmente un seguro que matenga los palets (del segundo más bajo hasta el más alto) en una posición elevada, dos que se encarguen de levantar y bajar los palets de manera que se logre una actuación de 3 posiciones, y uno que empuje hacia la banda transportadora el palet que se encuentre sin elevar.
+            </p>
+          </div>
+
+          <br>
+          <div class="row">
+            <p>
+              De esa manera, el proceso en palabras sería el siguiente: <b>primero,</b> los cilindros verticales empiezan en una posición que eleva la pila de palets 140 mm por encima de la banda transportadora incluyendo el palet que va a salir. En esa posición, el cilindro de ajuste acciona el seguro, el cual se encuentra a 280 mm sobre la banda transportadora y sostiene a partir del segundo palet de abajo hacia arriba; <b>segundo,</b> una vez accionado el seguro, los cilindros verticales se retraen dejando el palet de salida a nivel de la banda transportadora; <b>tercero,</b> el cilindro de empuje arrastra el palet hasta la banda transportadora haciendo un recorrido de 800 mm y retrayéndose de vuelta; <b>cuarto,</b> los cilindros verticales se extienden 280 mm por encima de la banda transportadora para llegar a sostener los demás palets; y <b>quinto,</b> los cilindros verticales llevan los palets a la posición de inicio de 140 mm, dejando el ahora segundo palet a la altura del seguro y quedando el sistema listo para repetir el ciclo. Cada ciclo se controla con una señal que indique que un palet ha sido completado y se requiere uno nuevo para apilar las canastas de frutas.
+            </p>
+
+            <br>
+
+            <p>
+              Dado ese proceso descrito en palabras, se propone el siguiente diagrama de fases del sistema:
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 video-box">
+              <img center src="assets/img/DiagramaFasesActuadores.png" class="img-fluid" width="120%">
+            </div>
+
+            <div class="col-lg-5 d-flex flex-column justify-content-center p-5">
+
+              <div class="icon-box">
+
+
+              <p>
+                En este caso, el <b>cilindro A</b> es el cilindro <b>de ajuste,</b> los <b>cilindros B y C</b> son los cilindros <b>de actuación vertical,</b> y el <b>cilindro D</b> es el cilindro <b>de empuje</b>. Se propone que el cilindro B <b>esté montado en el vástago del C</b>, de manera que se puedan lograr las tres posiciones descritas.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <br> <br> 
+
+      <div class="container">
+        <center><h1>Selección de cilindros</h1></center>
+        <div class="row">
+          <h2>Cilindros verticales</h2>
+          <p>
+            Se sabe que los palets tendrían una masa de 25 kg cada uno, y se espera que se apilen hasta 10 en el alimentador de palets. De esa forma, la fuerza de máquina para el cilindro B (el cilindro que está montado sobre el vástago del cilindro C) sería de 2.5 kN. La fuerza de máquina del cilindro C será la misma más el peso del cilindro B; se prevé que tendrá un peso despreciable pero de todas formas se dejará su dimensionamiento para el final, cuando ya se conozca el peso del cilindro B. De esa forma, la fuerza que debe ejercer el cilindro B asociada a esa fuerza de máquina será de 4 kN.
+          </p>
+          <br>
+          <p>
+            Dado que se trata de una fuerza relativamente grande, se decidió primero asegurar la resistencia a pandeo del cilindro. Para ello se consultó el catálogo de SMC de cilindros hidráulicos y se halló la serie CHSD, que tiene una carga crítica de pandeo de 18 kN. Según el criterio, la fuerza crítica de pandeo mínima necesaria es de 14 kN, lo cual deja al cilindro con un factor de seguridad frente a pandeo de 1.3.
+          </p>
+          <br>
+          <p>
+            De esa forma, teniendo en cuenta que el diámetro mínimo es 40 mm, se determina la presión necesaria dando como resultado 3 MPa. La serie CHSD tiene una presión nominal de 10 MPa lo que resulta suficiente. Teniendo conocimiento del diámetro, de la carrera de 140 mm y de que se necesita amortiguación para el movimiento, se seleccionó el modelo <b>CHDSD B 40 - 140 -- Z76,</b> que cuenta con detectores magnéticos amortiguamiento de aire.
+          </p>
+          <br>
+          <p>
+            Este cilindro tiene una masa de 2.94 kg, de manera que la fuerza de máquina del cilindro C es de 2.5 kN y su fuerza de cilindro real es de 4 kN. Como se previó, sí fue despreciable el peso del cilindro B para la carga del cilindro B, por lo cuál, dado que cumplen las mismas funciones y condiciones, se seleccionó el mismo modelo para este cilindro.
+          </p>
+          <br>
+          <br>
+          <h2>Cilindro de ajuste</h2>
+          <p>
+            Este cilindro sólo debe accionar un seguro en el alimentador de palets. Se determinó que basta con 25 mm de carrera. Se asume que el cilindro experimenta una fuerza de fricción similar a la de una pieza metálica de 500 g sobre madera. El coeficiente de fricción se tomó como 0.3. La fuerza de máquina fue de 1.5 N, y la fuerza real de cilindro fue 2.4 N. Nuevamente se buscó una serie que cumpliera con la resistencia a pandeo y se seleccionó la serie CHM de cilindros hidráulicos de SMC, para la cual se aseguró que la presión fuera suficiente. Para este caso, no sería necesaria amortiguación dada la pequeña carga que se mueve y el corto recorrido que se realiza. El modelo seleccionado es entonces el <b>CHDM B 20 25 C80,</b> con detectores magnéticos.
+          </p>
+          <br>
+          <br>
+          <h2>Cilindro de empuje</h2>
+          <p>
+            Este cilindro también se enfrenta a una fuerza de fricción, resultado del rozamiento entre un palet de 25 kg con la transportadora de rodillos de aluminio. Asumiendo el coeficiente de fricción de 0.25, la fuerza de máquina fue 61 N y la fuerza de cilindro fue de 170 N. Para el pandeo, la serie CHM también resulta suficiente, al igual que la presión nominal del cilindro. Se tiene una carrera de 800 mm y no necesita realmente amortiguación porque no tiene la masa acoplada al vástago, así que el modelo fue en principio el mismo que el cilindro anterior, pero variando la carrera. El modelo seleccionado fue: <b>CHDM B 20 800 C80.</b>
+          </p>
+
+          <br>
+          <br>
+          <h2>Resumen</h2>
+          <p>
+            El resumen de la selección de cilindros es la siguiente:
+          </p>
+
+          <table>
+            <tr>
+              <th>Cilindro</th><th>Modelo seleccionado</th><th>Presión nominal</th>
+            </tr>
+            <tr>
+              <td>A</td><td>CHDM B 20 25 C80</td><td>3.5 MPa</td>
+            </tr>
+            <tr>
+              <td>B</td><td>CHDSD B 40 - 140 -- Z76</td><td>10 MPa</td>
+            </tr>
+            <tr>
+              <td>C</td><td>CHDSD B 40 - 140 -- Z76</td><td>10 MPa</td>
+            </tr>
+            <tr>
+              <td>D</td><td>CHDM B 20 800 C80</td><td>3.5 MPa</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+
+
+          
+
+     
+
+</section>
+
   
-  </main><!-- End #main -->
-  
-  
+  </main><!-- End #main -->  
   
   
   
