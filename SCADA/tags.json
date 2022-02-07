@@ -5,40 +5,44 @@
       "tagType": "Folder",
       "tags": [
         {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_activar_banda1",
+          "value": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_entrada_lavadora",
+          "value": false,
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server unique"
+        },
+        {
           "valueSource": "opc",
           "dataType": "Boolean",
-          "name": "IniciarB",
+          "name": "Studio5000_entrada_lavadora",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "Studio5000_activar_banda1",
           "tagType": "AtomicTag",
           "opcServer": "Ignition OPC UA Server"
         },
         {
           "valueSource": "opc",
           "dataType": "Boolean",
-          "name": "IniciarLava",
+          "name": "Studio5000_activar_lavadora",
           "tagType": "AtomicTag"
         },
         {
-          "valueSource": "opc",
+          "valueSource": "memory",
           "dataType": "Boolean",
-          "name": "Lavadora",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "MediciónEntrLavad",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "Banda1",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "EntradaLava",
+          "name": "NX_activar_Lavadora",
+          "value": false,
           "tagType": "AtomicTag"
         }
       ]
@@ -50,47 +54,52 @@
         {
           "valueSource": "opc",
           "dataType": "Boolean",
-          "name": "Banda2",
+          "name": "Studio5000_entrada_singulador",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_entrada_singulador",
+          "value": false,
           "tagType": "AtomicTag"
         },
         {
           "valueSource": "opc",
           "dataType": "Boolean",
-          "name": "IniciarSingu",
+          "name": "Studio5000_activar_banda2",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_activar_singulador",
+          "value": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_activar_banda2",
+          "value": false,
           "tagType": "AtomicTag"
         },
         {
           "valueSource": "opc",
-          "name": "EntradaSingul",
+          "name": "Studio5000_salida_lavadora",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_salida_lavadora",
+          "value": false,
           "tagType": "AtomicTag"
         },
         {
           "valueSource": "opc",
           "dataType": "Boolean",
-          "name": "SalidaLav",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "Singula",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "InicioBan2",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "name": "MedicionSaliLav",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "MedicionEntSing",
+          "name": "Studio5000_activar_singulador",
           "tagType": "AtomicTag"
         }
       ]
@@ -101,55 +110,56 @@
       "tags": [
         {
           "valueSource": "opc",
-          "name": "MedicionEntrEncer",
+          "dataType": "Boolean",
+          "name": "Studio5000_activar_banda3",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_activar_enceradora",
+          "value": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "name": "Studio5000_entrada_enceradora",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_salida_singulador",
+          "value": false,
           "tagType": "AtomicTag"
         },
         {
           "valueSource": "opc",
           "dataType": "Boolean",
-          "name": "SalidSingula",
+          "name": "Studio5000_activar_enceradora",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "dataType": "Boolean",
+          "name": "NX_activar_banda3",
+          "value": false,
           "tagType": "AtomicTag"
         },
         {
           "valueSource": "opc",
           "dataType": "Boolean",
-          "name": "IniciarB3",
+          "name": "Studio5000_salida_singulador",
           "tagType": "AtomicTag"
         },
         {
-          "valueSource": "opc",
+          "valueSource": "memory",
           "dataType": "Boolean",
-          "name": "Banda3",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "MedicionSaliSingu",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "iniciarEncera",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "name": "SensorEntrEncera",
-          "tagType": "AtomicTag"
-        },
-        {
-          "valueSource": "opc",
-          "dataType": "Boolean",
-          "name": "MaquinaEncera",
+          "name": "NX_entrada_enceradora",
+          "value": false,
           "tagType": "AtomicTag"
         }
       ]
-    },
-    {
-      "name": "MODULO4",
-      "tagType": "Folder"
     },
     {
       "valueSource": "memory",
