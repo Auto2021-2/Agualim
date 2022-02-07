@@ -1,0 +1,151 @@
+{
+  "tags": [
+    {
+      "name": "MODULO1",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "Banda1",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "IniciarLava",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "MediciónEntrLavad",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "EntradaLava",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "IniciarB",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "Lavadora",
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "MODULO2",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "opc",
+          "name": "EntradaSingul",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "name": "MedicionSaliLav",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "SalidaLav",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "InicioBan2",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "Singula",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "MedicionEntSing",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "Banda2",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "IniciarSingu",
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "MODULO3",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "MedicionSaliSingu",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "Banda3",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "name": "MedicionEntrEncer",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "iniciarEncera",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "name": "SensorEntrEncera",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "MaquinaEncera",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "IniciarB3",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "opc",
+          "dataType": "Boolean",
+          "name": "SalidSingula",
+          "tagType": "AtomicTag"
+        }
+      ]
+    }
+  ]
+}
