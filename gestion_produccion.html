@@ -107,11 +107,24 @@
 
     <br> <br>
 
+    <section class="why-us" data-aos="fade-up" data-aos-delay="200">
+      <div class="container">
+        El indicador de Eficiencia General de los Equipos (OEE) se calculó tanto para el proceso actual como para el proceso automatizado propuesto. El resultado en ambos casos se puede ver en la parte inferior derecha de los diagramas VSM presentados arriba; sin embargo, el procedimiento para el cálculo se puede ver de la siguiente manera:
+      </div>
+      <img src="assets/img/Calculo_OEE.png" class="centering">
+      <br>
+      <div class="container">
+        <p>
+          Se estimaron las horas de jornada, el tiempo operativo y las capacidades de producción reales e ideales. Con ellos, se calcularon el tiempo operativo y la cantidad producida real en una jornada, para concluir con el cálculo de OEE. Las mejoras sustanciales que se dan cuando se realiza la automatización son en tiempo muerto y en productividad de ciclo.
+        </p>
+      </div>
+    </section>
+
     <section class="why-us" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
         <h2 class="section-title">Simulación en Plant simulation</h2>
         <p class="card-text">
-          Ambos procesos, tanto el actual como el de la propuesta de automatización, fueron simulados en el software <b>Tecnomatix Plant Simulation,</b> en una configuración con estaciones de trabajo y buffers.
+          Ambos procesos, tanto el actual como el de la propuesta de automatización, fueron simulados en el software <b>Tecnomatix Plant Simulation,</b> en una configuración con estaciones de trabajo y buffers. Cada estación de trabajo correspondió a una etapa del proceso de manufactura, y cada buffer se utilizó para modelar el efecto de inventario entre procesos, de manera que las estaciones que terminaran con su operación no se quedaran bloqueadas esperando a que se libere la siguiente estación. En cada estación, se ajustaron los parámetros de eficiencia, especialmente los tiempos de ciclo y la disponibilidad.
         </p>
       </div>
     </section>
@@ -146,6 +159,42 @@
         </table>
       </div>
     </section>
+
+    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <p>
+          De inmediato se puede observar que se está teniendo como resultado una mejora en el tiempo de ciclo total para la salida de cada canasta, y además, el tiempo de ciclo resultante después de llevar a cabo la automatización propuesta resulta ser menor al tiempo de Takt establecido por la demanda mensual estimada, el cuál correspondió a 19 s.
+        </p>
+      </div>
+    </section>
+
+    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p>
+              <b>Etapas del proceso actual</b>
+            </p>
+
+            <img src="assets/img/Tiempos_actual.png" class="centering">
+          </div>
+          <div class="col-lg-6">
+            <p>
+              <b>Etapas del proceso automatizado</b>
+            </p>
+            <img src="assets/img/Tiempos_automatizado.png" class="centering">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p>
+          Se observa que el comportamiento del tiempo de trabajo para las etapas tiene una forma similar para ambos procesos. Sin embargo, es evidente que hay una reducción significativa en el tiempo de bloqueo en la estación de encerado, y eso se traduce en un aumento en los tiempos de trabajo de las últimas tres estaciones. De cualquier manera, el tiempo que aparece "de espera" o "waiting" es en realidad causado por la forma en como se simulan los buffers, los cuales no entregan el producto tan pronto como es requerido por la estación siguiente, sino que esperan un tiempo determinado. Ello nos lleva a concluir que en la realidad, el tiempo de ciclo será aún más reducido y cumplirá con más veras el tiempo de Takt.
+        </p>
+      </div>
+    </section>
+
+
   
   </main><!-- End #main -->
   
