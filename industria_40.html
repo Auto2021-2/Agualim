@@ -77,7 +77,10 @@
   <main id="main">
     <br> <br> <br> <br>
     <section class="container" data-aos="fade-up" date-aos-delay="200">
-      <h1 class="section-title">Industria 4.0</h1>  
+      <h1 class="section-title">Industria 4.0</h1> 
+      <p>
+        Para el módulo de Industria 4.0, el objetivo fue plantear la arquitectura de control que sería utilizada en la planta automatizada, teniendo en cuenta la pirámide de automatización en la que se dividen elementos de sensado y actuación, de control, de control supervisorio y de gestión de empresa. Para ello, se planteó el flujo de proceso con el objetivo de listar todos los elementos de actuación que conforman la planta, así como los elementos sensóricos y la manera en como deberían ir conectados.
+      </p> 
       <h2> Flujo del proceso:</h2>
     </section>
     <section class="why-us" data-aos="fade-up" date-aos-delay="200">
@@ -162,7 +165,8 @@ Materia prima entra a una <b>banda transportadora</b>, en ella los operarios se 
       <h2>Elementos de control:</h2>
       <ul>
        <li>Controlador robot </li> 
-       <li>PLCs  </li> 
+       <li>PLC/RTU  </li> 
+       <li>Módulos de entrada (5)</li>
 
  </ul>
 
@@ -177,9 +181,9 @@ Materia prima entra a una <b>banda transportadora</b>, en ella los operarios se 
       <div class="container">
       <div class="row">
       <div class="container">
-      <h2>Elementos de supervisión:</h2>
+      <h2>Elementos de control supervisorio</h2>
       <ul>
-       <li>SCADA </li> 
+       <li>Sistema SCADA:</li> Se propone un sistema en el que la MTU esté alojada en un computador, y la RTU que controla el proceso de automatización proporcione los datos y reciba los comandos emitidos por la MTU a partir de la HMI.
 
  </ul>
 
@@ -196,7 +200,7 @@ Materia prima entra a una <b>banda transportadora</b>, en ella los operarios se 
       <div class="container">
       <h2>Elementos de interfaz:</h2>
       <ul>
-       <li>HMIs</li> 
+       <li>Tablero de mando local:</li> en donde se espera que estén algunos botones de arranque y parada, y demás comandos necesarios.
 
  </ul>
 
@@ -210,12 +214,7 @@ Materia prima entra a una <b>banda transportadora</b>, en ella los operarios se 
 
 
 
-
-
-
-
-
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+    <section class="why-us" data-aos="fade-up" data-aos-delay="200">
       <h2 class="section-title">Arquitectura de control</h2>
       <div class="container">
         <div class="scrollable">
@@ -224,6 +223,19 @@ Materia prima entra a una <b>banda transportadora</b>, en ella los operarios se 
       </div>
     </section>
 
+    <section class="why-us" data-aos="fade-up" data-aos-delay="200">
+      <div class="container">
+        <p>
+          Adicional a la arquitectura de control planteada, a continuación se presenta la arquitectura planeada en términos de los <b>softwares de simulación</b>, en donde se puede observar cómo se llevan a cabo las conexiones entre los softwares.
+        </p>
+        <h2 class="section-title">Arquitectura de control en software</h2>
+        <img src="assets/img/Arquitectura_software.png" class="centering">
+
+        <p>
+          En particular, se tiene el software de <b>Siemens NX</b> para la simulación de los elementos de la planta, mediante el modo de Mechatronics Concept Designer; el software de <b>RobotStudio</b> para el diseño y la simulación de la celda robotizada de manufactura; el software de <b>Studio5000</b> y <b>Logix Emulate</b> para la programación del PLC y emulación del mismo; y el software <b>Ignition</b> para establecer el sistema SCADA con sus unidades terminales, y además construir la HMI para la supervisión y el comando de la planta.
+        </p>
+      </div>
+    </section>
     
   
   </main><!-- End #main -->
