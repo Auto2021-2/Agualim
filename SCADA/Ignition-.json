@@ -1,0 +1,28 @@
+{
+  "main.class": "com.inductiveautomation.ignition.designer.DesignerStartupHook",
+  "window.mode": null,
+  "timeout": 30,
+  "screen": null,
+  "retries": -1,
+  "init.heap": null,
+  "max.heap": null,
+  "sun.java2d.d3d": null,
+  "sun.java2d.noddraw": null,
+  "jvm.arguments": [
+    ""
+  ],
+  "client.tag.overrides": {},
+  "fallback.application": "",
+  "use.custom.jre": false,
+  "custom.jre.path": "${JAVA_HOME}/bin/java",
+  "name": "Ignition-DESKTOP-BEPHV4N",
+  "description": null,
+  "gateway.info": {
+    "gateway.name": "Ignition-DESKTOP-BEPHV4N",
+    "gateway.address": "http://localhost:8088",
+    "redundant.gateways": []
+  },
+  "last.updated": 1644294454472,
+  "image.path": null,
+  "favorite": false
+}
