@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Roadmap</title>
+  <title>SCADA</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -80,28 +80,52 @@
     <section class="container" data-aos="fade-up" date-aos-delay="200">
       <h1 class="section-title">Comunicación SCADA</h1>  
       <br>
+      <p>
+        La comunicación entre los diferentes software se realiza usando la herramienta ignition, la cual permite conectar dispositivos que se comuniquen utilizando el protocolo OPC. Ademas esta aplicación permite conectar dispositivos que no se encuentran en la misma red local. La comunicación OPC de los programas Studio5000, NX siemens y RobotStudio se da a partir del acceso o la creacion de servidores OPC, los cuales se encargan de tomar datos que pueden estar en un formato nativo del fabricante y llevarlos al protocolo estandarizado llamado OLE for process control (OPC).
+      </p>
+      <br>
+      <p>
+        El protocolo OPC ha evolucionado a través de los años y su ultima versión es la OPC UA, el cual permite diversificar la variedad de dispositivos que se pueden conectar por medio de este protocolo, es decir que así se pueden conectar dispositivos móviles y al mismo implementar tecnologías modernas como lo son la visión de máquina, inteligencia artificial y aprendizaje profundo.
+      </p>
     </section>
  
-   La comunicación entre los diferentes software se realiza usando la herramienta ignition, la cual permite conectar dispositivos que se comuniquen a traves del protocolo OPC, incluso dependiendo de la arquitectura se pueden realizar conexiones de dispositivos en diferentes redes locales. Para generar una comunicación OPC de los programas Studio5000, NX siemens y RobotStudio se debe acceder o crear servidores OPC, los cuales se encargan de tomar datos que pueden estar en un formato nativo del fabricante y llevarlos al protocolo estandarizado. 
+   
     <br>
-    El protocolo OPC ha evolucionado a través de los años y su ultima versión es la OPC UA, el cual permite diversificar la variedad de dispositivos que se pueden conectar por medio de este protocolo, es decir que así se pueden conectar dispositivos móviles y al mismo implementar tecnologías modernas como lo son la visión de máquina, inteligencia artificial y aprendizaje profundo.
+    
     <br>
+    <div class="container" data-aos="fade-up" date-aos-delay="200">
     <center>
           <img src="assets/img/esquema_comunicacion.png" alt="Layout" style="width:600px;height:700px;">           
     </center>
+    </div>
     <br>
     <br>
 
-    <h3>RobotStudio</h3>
-    El software RobotStudio no tiene la posibilidad de acceder a servidores OPC o crear uno para transmitir datos por si mismo. Para logralo primero se requiere una version de Robotware compatible con comunicaciones OPC, lo cual se traduce en que el controlador virtual tiene la capacidad de enviar y recibir datos OPC, para lograr la conexion con ignition se requiere usar el software IRC5 OPC UA, en donde se permite conectar los controladores que se estan ejecutando a un servidor OPC UA, el cual se puede conectar facilmente desde ignition.
+    <section class="container" data-aos="fade-up" date-aos-delay="200">
+
+      <h3>RobotStudio</h3>
+      <p>
+        El software RobotStudio no tiene la posibilidad de acceder a servidores OPC o crear uno para transmitir datos por si mismo. Para logralo primero se requiere una version de Robotware compatible con comunicaciones OPC, lo cual se traduce en que el controlador virtual tiene la capacidad de enviar y recibir datos OPC, para lograr la conexion con ignition se requiere usar el software IRC5 OPC UA, en donde se permite conectar los controladores que se estan ejecutando a un servidor OPC UA, el cual se puede conectar facilmente desde ignition.
+      </p>
+    </section>
     <br>
     <br>
-    <h3>NXSiemens</h3>
-    Para el caso de NX, el software tiene ya integrada la posibilidad de establecer comunicaciones OPC UA. Por esta razon se puede acceder al servidor OPC que crea ignition por defecto para conectar las variables de NX con las tag correspondientes dentro de la HDMI.
+
+    <section class="container" data-aos="fade-up" date-aos-delay="200">
+      <h3>NXSiemens</h3>
+      <p>
+        Para el caso de NX, el software tiene ya integrada la posibilidad de establecer comunicaciones OPC UA. Por esta razon se puede acceder al servidor OPC que crea ignition por defecto para conectar las variables de NX con las tag correspondientes dentro de la HDMI.
+      </p>
+    </section>
     <br>
     <br>
-    <h3>RSlink</h3>
-    Para este software tambien usa un server OPC UA para transmitir los datos a traves de la red, pero a diferencia de robotstudio se puede correr un servidor sin ningun otro software adicional. De esta manera desde ignition se crea una nueva conexión OPC.
+
+    <section class="container" data-aos="fade-up" date-aos-delay="200">
+      <h3>RSLink</h3>
+      <p>
+        Para este software se utiliza un server OPC DA para transmitir los datos a traves de la red, pero a diferencia de robotstudio se puede correr un servidor sin ningun otro software adicional. De esta manera desde ignition se crea una nueva conexión OPC.
+      </p>
+    </section>
 
 
     <br>
@@ -146,9 +170,11 @@
 <br>
 <br>
 <br>
-<h1>Oportunidades de mejora</h1>
-
-Durante el desarrollo del proyecto se tuvieron bastantes dificultades para correr todos los programas involucrados en las conexiones OPC en un mismo computador. Por este motivo se podria llevar ignition a la nube por medio de una maquina virtual como las ofrecidas por google. Con esta nueva arquitectura seria posible acceder a los servidores de ignition usando una ip correspondiente a la de la maquina virtual y solo con acceso a internet se podria conectar diferentes servidores OPC que no estan en la misma red local.
+<section class="container" data-aos="fade-up" date-aos-delay="200">
+  <h1>Oportunidades de mejora</h1>
+  <p>
+    Durante el desarrollo del proyecto se tuvieron bastantes dificultades para correr todos los programas involucrados en las conexiones OPC en un mismo computador. Por este motivo se podria llevar ignition a la nube por medio de una maquina virtual como las ofrecidas por google. Con esta nueva arquitectura seria posible acceder a los servidores de ignition usando una ip correspondiente a la de la maquina virtual y solo con acceso a internet se podria conectar diferentes servidores OPC que no estan en la misma red local.
+  </p>
 
  <br>
     <br>
@@ -156,6 +182,7 @@ Durante el desarrollo del proyecto se tuvieron bastantes dificultades para corre
           <img src="assets/img/esquema_cloud.png" alt="Layout" style="width:900px;height:657px;">           
       </center>
     </section>
+    
   
   </main><!-- End #main -->
   
