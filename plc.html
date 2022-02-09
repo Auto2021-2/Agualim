@@ -83,30 +83,28 @@
     <br>  
     <div class="container">
       <h2>
-               <center>Programación del PLC</center>   
+               <center>Controladores PLC</center>   
                 </h2>
+
+                <p>
+                  El módulo de controladores PLC fue un pilar importante en el proyecto integrador, ya que de cierta manera actuó como un puente que conectó los conocimientos recién aprendidos, como la virtualización de fábrica y la perspectiva de automatización, con conocimientos que se han venido adquiriendo a lo largo de la carrera, como lógica combinacional y secuencial, control discreto y programación de controladores. El resultado del módulo fue la propuesta de programación de todas las etapas del proceso, manejando conocimientos de programación secuencial con lenguaje SFC (o GRAFCET) y transportándolos al lenguaje de contactos Ladder. Todos los códigos propuestos se escribieron en el software de Studio5000 de Rockwell Automation, al igual que el programa principal que controla la lógica de ejecución de cada rutina en particular.
+                </p>
                 <p>
                   A continuación se muestra el programa en Lader usando el Software Studio 5000, la señal paletizador envía una señal digital al programa en 
                   Grafcet que se muestra más adelante.
-                  <p>
+                  </p>
       <img center src="assets/img/Studio5000.png" class="img-fluid" width="120%">
+
+      <p>
+        Ahora, para cada una de las rutinas, en primera instancia se dibujaron los diagramas GRAFCET tanto de descripción funcional como de descripción tecnológica. Esto con el objetivo de plantear la representación secuencial de cada proceso. En esencia, los diagramas de las etapas se parecen entre sí ya que siguen una estructura parecida: fruta entra dentro de la máquina en cuestión, la máquina se enciende y espera una serie de condiciones para volver a apagarse. El cambio sustancial ocurre en las acciones particulares que se ejecutan en las etapas y las receptividades asociadas a las transiciones entre etapa y etapa.
+      </p>
+
+    </div>
+  </section>
 
  
 
-    <section class="container">
     
-      <div class="container">
-      <h2>
-               <center>Programación de Grafcet a la manera de Grafcet</center>   
-                </h2>
-                <p>
-                  A continuación se muestra el programa que controla el movimiento de los motores de la banda transportadora # 2. Se presenta tanto el esquema de la parte secuencial (izquierda) como el esquema de la parte combinacional (derecha).
-                  <p>
-      <img center src="assets/img/Lader-grafcet.png" class="img-fluid" width="120%">
-
-
-
-    </section>
 
     <div class="container">
       <h2>
@@ -129,6 +127,21 @@
                   A continuación se muestra el programa que controla el movimiento de los motores de la zona de lavado. Se presenta tanto el diagrama funcional (izquierda) como el diagrama técnico (derecha).
                   <p>
       <img center src="assets/img/grafcet_lavadora.png" class="img-fluid" width="120%">
+
+
+
+    </section>
+
+    <section class="container">
+    
+      <div class="container">
+      <h2>
+               <center>Programación de Ladder a la manera de Grafcet</center>   
+                </h2>
+                <p>
+                  A continuación se muestra el programa que controla el movimiento de los motores de la banda transportadora # 2. Se presenta tanto el esquema de la parte secuencial (izquierda) como el esquema de la parte combinacional (derecha).
+                  <p>
+      <img center src="assets/img/Lader-grafcet.png" class="img-fluid" width="120%">
 
 
 
