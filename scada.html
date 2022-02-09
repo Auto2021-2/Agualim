@@ -82,8 +82,9 @@
       <br>
     </section>
  
-    La comunicación entre los diferentes software se realiza usando la herramienta ignition, la cual permite conectar dispositivos que se comuniquen utilizando el protocolo OPC. Ademas esta aplicación permite conectar dispositivos que no se encuentran en la misma red local. La comunicación OPC de los programas Studio5000, NX siemens y RobotStudio se da a partir del acceso o la creacion de servidores OPC, los cuales se encargan de tomar datos que pueden estar en un formato nativo del fabricante y llevarlos al protocolo estandarizado llamado OLE for process control (OPC). 
+   La comunicación entre los diferentes software se realiza usando la herramienta ignition, la cual permite conectar dispositivos que se comuniquen a traves del protocolo OPC, incluso dependiendo de la arquitectura se pueden realizar conexiones de dispositivos en diferentes redes locales. Para generar una comunicación OPC de los programas Studio5000, NX siemens y RobotStudio se debe acceder o crear servidores OPC, los cuales se encargan de tomar datos que pueden estar en un formato nativo del fabricante y llevarlos al protocolo estandarizado. 
     <br>
+    El protocolo OPC ha evolucionado a través de los años y su ultima versión es la OPC UA, el cual permite diversificar la variedad de dispositivos que se pueden conectar por medio de este protocolo, es decir que así se pueden conectar dispositivos móviles y al mismo implementar tecnologías modernas como lo son la visión de máquina, inteligencia artificial y aprendizaje profundo.
     <br>
     <center>
           <img src="assets/img/esquema_comunicacion.png" alt="Layout" style="width:600px;height:700px;">           
@@ -132,7 +133,7 @@
     <section class="container" data-aos="fade-up" date-aos-delay="200">
     <br>
     <h1 class="section-title">Pagina de empacado</h1> 
-    En esta pagina tiene como objetivo la supervision de los actuadores y sensores de la linea de producción virtual, donde se puede observar el intercambio de señales entre Rslink y NX siemens, aunque se observan botones de 2 estados realemente la signacion de los valores de las tag entre NX y RSlink se da usando eventos que ejecutan un script para sobre escribir el tag homologo en el otro software, en otras palabras, si Nx cambia el estado de un sensor este activa un evento y un script para cambiar el tag correspondiente en RSlink.
+    En esta página tiene como objetivo la supervisión de los actuadores y sensores de la linea de producción virtual, donde se puede observar el intercambio de señales entre Rslink y NX siemens, aunque se observan botones de 2 estados realmente la asignación de los valores de las tag entre NX y RSlink se da usando eventos que ejecutan un script para sobre escribir el tag homologo en el otro software, en otras palabras, si Nx cambia el estado de un sensor este activa un evento y un script para cambiar el tag correspondiente en RSlink.
     <br>
     <br>
      <center>
@@ -152,7 +153,7 @@ Durante el desarrollo del proyecto se tuvieron bastantes dificultades para corre
  <br>
     <br>
      <center>
-          <img src="assets/img/esquema_cloud.png" alt="Layout" style="width:1008px;height:657px;">           
+          <img src="assets/img/esquema_cloud.png" alt="Layout" style="width:900px;height:657px;">           
       </center>
     </section>
   
