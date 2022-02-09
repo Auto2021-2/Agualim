@@ -63,6 +63,7 @@
         </ul>
     </div>
   <li><a href="seleccion.html">Selección de productos</a></li>
+  <li><a href="proceso.html">Sección de proceso</a></li>
             <li><a href="team.html">Integrantes</a></li>
             <li><a href="asignatura.html">Asignatura</a></li>
         </ul>
@@ -213,10 +214,28 @@
     <br>
 
     <div class="container">
+      <h2>Selección de válvulas</h2>
+      <p>
+        Dados los 4 cilindros, se necesitarían 4 válvulas de control direccional de 5 o 4 vías, y de 2 posiciones. Es decir, 5/2 o 4/2. El catálogo que se encontró en tema de válvulas hidráulicas fue el catálogo de <b>Parker.</b> Se encontraron <b>electroválvulas 4/2,</b> de las cuales se debía seleccionar un modelo cuyos valores de caudal máximo y presión máxima fueran superiores a los valores con los que se está trabajando.
+      </p>
+      <br>
+      <p>
+        El caudal máximo de trabajo se calculó en unos 5 L/min, y la presión máxima de trabajo fue de 30 bar. Con esos valores, se seleccionó el modelo de válvula <b>D3*030</b> de Parker, el cuál tiene como presión máxima admisible 350 bar y como caudal máximo admisible 39 L/min. Según el fabricante y las curvas suministradas, para un caudal de 5 L/min la caída de presión en la válvula es inferior a 1 Bar, pero por practicidad se dejó ese valor de caída de presión como 1 Bar.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>Selección de bomba</h2>
+      <p>
+        Dada la presión de trabajo requerida, y la caída de presión presentada por el paso en la válvula, se requería una bomba que pudiera entregar como mínimo una presión 31 bar a un caudal superior a 5 L/min. Se consultó nuevamente el fabricante Parker y se encontró que, afortunadamente, las bombas disponibles superan con creces los valores mínimos requeridos. En particular, se seleccionó una bomba de la serie P1 de Parker, serie que cuenta con una presión de trabajo disponible de 280 bar y un caudal de 278 L/min.
+      </p>
+
+    <div class="container">
       <h2>
                <center>Programación de Grafcet para los actuadores</center>   
                 </h2>
                 <p>
+                  Como parte del resultado, se realizó la simulación de los 4 cilindros con su respectivo sistema hidráulico en el Software CADeSimu. Este software permitió además la programación de la lógica de las válvulas de accionamiento mediante lenguaje Grafcet.
                   A continuación se muestra el diagrama funcional en Grafcet que controla el movimiento de los cilindros hidráulicos.
                   <p>
                     <center>
@@ -232,8 +251,7 @@
         <h1>Simulación</h1>
 
         <p>
-          Usando el Software CadeSimu se realizó el código en Grafcet. A continuación se observa el correcto funcionamiento de acuerdo al diagrama de fases.
-          
+          Usando el Software CadeSimu se realizó el código en Grafcet. A continuación se observa el correcto funcionamiento de acuerdo al diagrama de fases. Para la simulación en el software, se utilizó un pulsador como botón de arranque y se modeló el proceso como una alimentación continua de palets, de manera que se viera fluido el funcionamiento de los actuadores a lo largo de las etapas.
         </p>
 
         <video controls>
